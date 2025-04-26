@@ -1,55 +1,50 @@
 // Sample paper data
 const papers = {
   paper1: {
-    title: "General Knowledge",
+    title: "AIIMS NORCET Paper 1",
     duration: 90,
-    questions: generateQuestions("General Knowledge", 100),
+    questions: generateQuestions("AIIMS NORCET Paper 1", 100),
   },
   paper2: {
-    title: "Mathematics",
+    title: "AIIMS NORCET Paper 2",
     duration: 90,
-    questions: generateQuestions("Mathematics", 100),
+    questions: generateQuestions("AIIMS NORCET Paper 2", 100),
   },
   paper3: {
-    title: "English Language",
+    title: "AIIMS NORCET Paper 3",
     duration: 90,
-    questions: generateQuestions("English Language", 100),
+    questions: generateQuestions("AIIMS NORCET Paper 3", 100),
   },
-  paper4: {
-    title: "Physics",
-    duration: 90,
-    questions: generateQuestions("Physics", 100),
-  },
-  paper5: {
-    title: "Chemistry",
-    duration: 90,
-    questions: generateQuestions("Chemistry", 100),
-  },
-  paper6: {
-    title: "Biology",
-    duration: 90,
-    questions: generateQuestions("Biology", 100),
-  },
-  paper7: {
-    title: "Computer Science",
-    duration: 90,
-    questions: generateQuestions("Computer Science", 100),
-  },
-  paper8: {
-    title: "Economics",
-    duration: 90,
-    questions: generateQuestions("Economics", 100),
-  },
-  paper9: {
-    title: "Geography",
-    duration: 90,
-    questions: generateQuestions("Geography", 100),
-  },
-  paper10: {
-    title: "History",
-    duration: 90,
-    questions: generateQuestions("History", 100),
-  },
+  // paper4: {
+  //   title: "Chemistry",
+  //   duration: 90,
+  //   questions: generateQuestions("Chemistry", 100),
+  // },
+  // paper6: {
+  //   title: "Biology",
+  //   duration: 90,
+  //   questions: generateQuestions("Biology", 100),
+  // },
+  // paper7: {
+  //   title: "Computer Science",
+  //   duration: 90,
+  //   questions: generateQuestions("Computer Science", 100),
+  // },
+  // paper8: {
+  //   title: "Economics",
+  //   duration: 90,
+  //   questions: generateQuestions("Economics", 100),
+  // },
+  // paper9: {
+  //   title: "Geography",
+  //   duration: 90,
+  //   questions: generateQuestions("Geography", 100),
+  // },
+  // paper10: {
+  //   title: "History",
+  //   duration: 90,
+  //   questions: generateQuestions("History", 100),
+  // },
 }
 
 // Helper function to generate sample questions
@@ -58,7 +53,7 @@ function generateQuestions(subject: string, count: number) {
 
   // Sample question templates for different subjects
   const templates: Record<string, any[]> = {
-    "General Knowledge": [
+    "AIIMS NORCET Paper 1": [
       {
         "question": "What is the antidote for Heparin overdose?",
         "options": [
@@ -1160,7 +1155,7 @@ function generateQuestions(subject: string, count: number) {
         "explanation": "Normal blood pH is tightly regulated between 7.35 and 7.45."
       }
     ],
-    "English Language": [
+    "AIIMS NORCET Paper 2": [
       {
         "question": "What is the antidote for Heparin overdose?",
         "options": [
@@ -2262,7 +2257,7 @@ function generateQuestions(subject: string, count: number) {
         "explanation": "TB requires airborne precautions with an N95 mask."
       }
     ],
-    "Physics": [
+    "AIIMS NORCET Paper 3": [
       {
         "question": "A nurse is assessing a patient with pneumonia. Which finding is most concerning?",
         "options": [
