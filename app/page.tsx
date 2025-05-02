@@ -5,16 +5,16 @@ import { BookOpen, Clock, FileQuestion, ArrowRight } from "lucide-react"
 
 // Mock data for papers
 const papers = [
-  { id: "paper1", title: "AIIMS NORCET Paper 1", questions: 100, duration: 90 },
-  { id: "paper2", title: "AIIMS NORCET Paper 2", questions: 100, duration: 90 },
-  { id: "paper3", title: "AIIMS NORCET Paper 3", questions: 100, duration: 90 },
-  // { id: "paper4", title: "Physics", questions: 100, duration: 90 },
-  // { id: "paper5", title: "Chemistry", questions: 100, duration: 90 },
-  // { id: "paper6", title: "Biology", questions: 100, duration: 90 },
-  // { id: "paper7", title: "Computer Science", questions: 100, duration: 90 },
-  // { id: "paper8", title: "Economics", questions: 100, duration: 90 },
-  // { id: "paper9", title: "Geography", questions: 100, duration: 90 },
-  // { id: "paper10", title: "History", questions: 100, duration: 90 },
+  { id: "paper1", title: "General Knowledge", questions: 100, duration: 90 },
+  { id: "paper2", title: "Mathematics", questions: 100, duration: 90 },
+  { id: "paper3", title: "English Language", questions: 100, duration: 90 },
+  { id: "paper4", title: "Physics", questions: 100, duration: 90 },
+  { id: "paper5", title: "Chemistry", questions: 100, duration: 90 },
+  { id: "paper6", title: "Biology", questions: 100, duration: 90 },
+  { id: "paper7", title: "Computer Science", questions: 100, duration: 90 },
+  { id: "paper8", title: "Economics", questions: 100, duration: 90 },
+  { id: "paper9", title: "Geography", questions: 100, duration: 90 },
+  { id: "paper10", title: "History", questions: 100, duration: 90 },
 ]
 
 export default function Dashboard() {

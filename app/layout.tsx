@@ -9,7 +9,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "ExamPrep CBT Platform",
-  description: "A Computer Based Test platform for practice exams"
+  description: "A Computer Based Test platform for practice exams",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({

@@ -49,22 +49,22 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-purple-700 text-sm">
+                <Link href="/about" className="text-gray-600 hover:text-purple-700 text-sm">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-purple-700 text-sm">
+                <Link href="/practice-sets" className="text-gray-600 hover:text-purple-700 text-sm">
                   Practice Tests
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-purple-700 text-sm">
-                  Study Resources
+                <Link href="/exams" className="text-gray-600 hover:text-purple-700 text-sm">
+                  Exams
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-purple-700 text-sm">
+                <Link href="/faq" className="text-gray-600 hover:text-purple-700 text-sm">
                   FAQ
                 </Link>
               </li>
@@ -76,8 +76,23 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-4 text-purple-700">Support</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-600 hover:text-purple-700 text-sm">
+                <Link href="/help" className="text-gray-600 hover:text-purple-700 text-sm">
                   Help Center
+                </Link>
+              </li>
+              <li>
+                <Link href="/support" className="text-gray-600 hover:text-purple-700 text-sm">
+                  Support Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/sign-in" className="text-gray-600 hover:text-purple-700 text-sm">
+                  Sign In
+                </Link>
+              </li>
+              <li>
+                <Link href="/sign-up" className="text-gray-600 hover:text-purple-700 text-sm">
+                  Sign Up
                 </Link>
               </li>
               <li>
@@ -88,11 +103,6 @@ export function Footer() {
               <li>
                 <Link href="#" className="text-gray-600 hover:text-purple-700 text-sm">
                   Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-600 hover:text-purple-700 text-sm">
-                  Cookie Policy
                 </Link>
               </li>
             </ul>

@@ -41,7 +41,7 @@ export function Header() {
             Home
           </Link>
           <Link
-            href="#"
+            href="/about"
             className={`text-sm font-medium transition-colors hover:text-purple-700 ${
               isActive("/about") ? "text-purple-700" : "text-gray-600"
             }`}
@@ -49,7 +49,7 @@ export function Header() {
             About
           </Link>
           <Link
-            href="#"
+            href="/contact"
             className={`text-sm font-medium transition-colors hover:text-purple-700 ${
               isActive("/contact") ? "text-purple-700" : "text-gray-600"
             }`}
@@ -57,22 +57,58 @@ export function Header() {
             Contact
           </Link>
           <Link
-            href="#"
+            href="/help"
             className={`text-sm font-medium transition-colors hover:text-purple-700 ${
               isActive("/help") ? "text-purple-700" : "text-gray-600"
             }`}
           >
             Help
           </Link>
+          <Link
+            href="/practice-sets"
+            className={`text-sm font-medium transition-colors hover:text-purple-700 ${
+              isActive("/practice-sets") ? "text-purple-700" : "text-gray-600"
+            }`}
+          >
+            Practice Sets
+          </Link>
+          <Link
+            href="/exams"
+            className={`text-sm font-medium transition-colors hover:text-purple-700 ${
+              isActive("/exams") ? "text-purple-700" : "text-gray-600"
+            }`}
+          >
+            Exams
+          </Link>
+          <Link
+            href="/faq"
+            className={`text-sm font-medium transition-colors hover:text-purple-700 ${
+              isActive("/faq") ? "text-purple-700" : "text-gray-600"
+            }`}
+          >
+            FAQ
+          </Link>
+          <Link
+            href="/support"
+            className={`text-sm font-medium transition-colors hover:text-purple-700 ${
+              isActive("/support") ? "text-purple-700" : "text-gray-600"
+            }`}
+          >
+            Support Us
+          </Link>
         </nav>
 
         {/* Desktop User Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost" size="sm" className="text-gray-600 hover:text-purple-700">
-            <LogIn className="h-4 w-4 mr-2" />
-            Sign In
+          <Button variant="ghost" size="sm" className="text-gray-600 hover:text-purple-700" asChild>
+            <Link href="/sign-in">
+              <LogIn className="h-4 w-4 mr-2" />
+              Sign In
+            </Link>
           </Button>
-          <Button className="bg-purple-600 hover:bg-purple-700">Get Started</Button>
+          <Button className="bg-purple-600 hover:bg-purple-700" asChild>
+            <Link href="/sign-up">Get Started</Link>
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -98,7 +134,7 @@ export function Header() {
               Home
             </Link>
             <Link
-              href="#"
+              href="/about"
               className="flex items-center gap-2 text-lg font-medium text-gray-600 hover:text-purple-700"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -106,7 +142,7 @@ export function Header() {
               About
             </Link>
             <Link
-              href="#"
+              href="/contact"
               className="flex items-center gap-2 text-lg font-medium text-gray-600 hover:text-purple-700"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -114,19 +150,53 @@ export function Header() {
               Contact
             </Link>
             <Link
-              href="#"
+              href="/help"
               className="flex items-center gap-2 text-lg font-medium text-gray-600 hover:text-purple-700"
               onClick={() => setIsMenuOpen(false)}
             >
               <HelpCircle className="h-5 w-5" />
               Help
             </Link>
+            <Link
+              href="/practice-sets"
+              className="flex items-center gap-2 text-lg font-medium text-gray-600 hover:text-purple-700"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <BookOpen className="h-5 w-5" />
+              Practice Sets
+            </Link>
+            <Link
+              href="/exams"
+              className="flex items-center gap-2 text-lg font-medium text-gray-600 hover:text-purple-700"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <BarChart3 className="h-5 w-5" />
+              Exams
+            </Link>
+            <Link
+              href="/faq"
+              className="flex items-center gap-2 text-lg font-medium text-gray-600 hover:text-purple-700"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <HelpCircle className="h-5 w-5" />
+              FAQ
+            </Link>
+            <Link
+              href="/support"
+              className="flex items-center gap-2 text-lg font-medium text-gray-600 hover:text-purple-700"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <User className="h-5 w-5" />
+              Support Us
+            </Link>
 
             <div className="mt-6 flex flex-col gap-4">
-              <Button variant="outline" className="w-full justify-center">
-                Sign In
+              <Button variant="outline" className="w-full justify-center" asChild>
+                <Link href="/sign-in">Sign In</Link>
               </Button>
-              <Button className="w-full justify-center bg-purple-600 hover:bg-purple-700">Get Started</Button>
+              <Button className="w-full justify-center bg-purple-600 hover:bg-purple-700" asChild>
+                <Link href="/sign-up">Get Started</Link>
+              </Button>
             </div>
           </nav>
         </div>
